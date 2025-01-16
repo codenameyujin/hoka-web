@@ -6196,6 +6196,8 @@ header .nav .nav-icon.active div {
     .headerArea .wrap .nav .mo { display: block; }    
 	.header_btn { margin-right: calc(100vw * (70 / 1199)); position: absolute; top: 50%; right: 0; transform: translateY(-50%); z-index: 99; }
     .header_btn button { margin-left: calc(100vw * (40 / 1199)); }
+    .header_btn a { margin-left: calc(100vw * (40 / 1199)); }
+    .header_btn a { margin-left: calc(100vw * (40 / 1199)); }
     .header_btn .language { display: flex; margin-right:calc(100vw * (48 / 1199)) }
     .header_btn .language li { font-size: calc(100vw * (22 / 1199)); }
     .header_btn .language li a { padding-left: calc(100vw * (24 / 1199)); }     
@@ -6220,6 +6222,7 @@ header .nav .nav-icon.active div {
     .headerArea .navbar>li>.sub-menu>li { margin-top: calc(100vw * (60 / 1180)); }
     .header_btn { margin-right: calc(100vw * (72 / 1180)); z-index: 99; }
     .header_btn button { margin-left: calc(100vw * (40 / 1180)); }
+    .header_btn a { margin-left: calc(100vw * (40 / 1180)); }
     .header_btn .language { margin-right: calc(100vw * (48 / 1180)); }
     .header_btn .language li { font-size: calc(100vw * (22 / 1180)); }
     .header_btn .language li a { padding-left: calc(100vw * (24 / 1180)); }
@@ -6265,6 +6268,7 @@ header .nav .nav-icon.active div {
     .headerArea .navbar>li>.sub-menu>li:nth-child(3) { width: 50%; margin-top: calc(100vw * (60 / 750)); font-size: calc(100vw * (32 / 750)); font-weight: 700; }
     .header_btn { margin-right: calc(100vw * (76 / 750)); }
     .header_btn button { margin-left: calc(100vw * (32 / 750)); }
+    .header_btn a { margin-left: calc(100vw * (32 / 750)); }
     .header_btn .language { margin-right: calc(100vw * (32 / 750)); }
     .header_btn .language li { font-size: calc(100vw * (28 / 750)); }
     .header_btn .language li a { padding-left: calc(100vw * (18 / 750)); }
