@@ -19226,7 +19226,7 @@ main.container {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  width: auto;
+  max-width: 1160px;
 }
 
 /* .container.responsivegrid {
@@ -19279,11 +19279,435 @@ main.container {
   margin-top: 10px;
 }
 
+.challenge-content {
+  position: relative;
+  margin-top: 20vh;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.section_schedule {
+  position: relative;
+  background-color: #EABE12;
+}
+
+.section_schedule .icon_03 {
+  opacity: 0;
+  position: absolute;
+  right: 36px;
+  bottom: -139px;
+  background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v4.png);
+  -webkit-background-size: 2050px 1848px;
+  background-size: 2050px 1848px;
+  background-position: -366px -334px;
+  width: 355px;
+  height: 333px;
+  z-index: 10;
+}
+
+.challenge-inner {
+    position: relative;
+    max-width: 1160px;
+    margin: 0 auto;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.section_schedule .challenge-inner, .section_step .challenge-inner, .section_benefit .challenge-inner {
+  padding: 150px 30px;
+  text-align: center;
+}
+
+.section_schedule .inner_title, .section_step .inner_title, .section_benefit .inner_title {
+  font-size: 64px;
+  font-weight: 700 ;
+  color: #fff;
+  opacity: 1;
+  margin: 0 auto;
+  /* background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/05/weeklydiary/img/sp_weekdiary_v4.png); */
+  /* -webkit-background-size: 2050px 1848px;
+  background-size: 2050px 1848px;
+  background-position: -927px -841px;
+  width: 364px;
+  height: 80px; */
+}
+
+.section_benefit .inner_title2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #fff;
+  opacity: 1;
+  margin: 0 auto;
+}
+
+.section_schedule.vertical .inner_title {
+  animation: .7s fadeVertical forwards;
+}
+
+.blind {
+    /* overflow: hidden; */
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.section_schedule .schedule_box {
+  opacity: 1;
+  position: relative;
+  border-radius: 20px;
+  border: 3px solid #000;
+  padding: 90px 10px 90px 72px;
+  background-color: #fff;
+  margin: 63px auto 0;
+  box-sizing: border-box;
+}
+
+.section_schedule .schedule_box .icon_05 img {
+  opacity: 1;
+  position: absolute;
+  z-index: 10;
+  background-image: url(../img/callender);
+  -webkit-background-size: 2050px 1848px;
+  background-size: 2050px 1848px;
+  background-position: -1512px 0px;
+  width: 236px;
+  height: 219px;
+  top: -100px;
+  right: -60px;
+}
+
+.section_schedule .schedule_box .schedule_item .month {
+  display: block;
+  float: left;
+  margin-top: 15px;
+  margin-right: 32px;
+}
+
+.desc {
+  margin-top: 14px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 36px;
+  text-align: left;
+  color: #231F20;
+}
+
+.desc strong {
+  color: #0D99FF;
+}
+
+.section_step {
+  position: relative;
+  background-color: #0D99FF;
+}
+
+.section_step .step_list {
+  position: relative;
+  margin: 32px -15px -15px;
+  font-size: 0;
+  z-index: 10;
+}
+
+.section_step .step_list .step_item_01.active {
+  animation: .7s fadeVertical .7s forwards;
+}
+
+.section_step .step_list [class*="step_item"] {
+  display: inline-block;
+  width: calc(50% - 30px);
+  margin: 15px;
+  padding: 46px 30px 50px;
+  background-color: #fff;
+  border: 4px solid #000;
+  border-radius: 20px;
+  box-sizing: border-box;
+  min-height: 480px;
+  opacity: 1;
+}
+
+.section_step .step_list [class*="step_item"] .step {
+  display: block;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 36px;
+  color: #D32154;
+}
+
+.section_step .step_list [class*="step_item"] .step_title {
+  display: block;
+  font-weight: bold;
+  margin-top: 16px;
+  font-size: 28px;
+  line-height: 40px;
+  color: #231F20;
+}
+
+.section_step .step_list [class*="step_item"] .step_title span {
+  color: #0D99FF
+}
+
+.section_step .step_list [class*="step_item"] .img_box {
+  height: 192px;
+}
+
+.section_step .step_list .step_item_01 .img_box {
+  background: url(/img/challenge-step1.png) no-repeat 50% 50%;
+  background-size: 330px 150px
+}
+
+.section_step .step_list .step_item_02 .img_box {
+  background: url(/img/challenge-step2.png) no-repeat 50% 50%;
+  background-position: center;
+  background-size: 330px 150px;
+}
+
+.section_step .step_list .step_item_03 .img_box {
+  background: url(/img/challenge-step3.png) no-repeat 50% 50%;
+  background-position: center;
+  background-size: 330px 150px;
+}
+
+.section_step .step_list .step_item_04 .img_box {
+  background: url(/img/challenge-step4.png) no-repeat 100% 100%;
+  background-position: center;
+  background-size: 110px 110px;
+}
+
+.section_step .step_list [class*="step_item"] .info_text {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.3px;
+  color: #231F20;
+}
+
+.section_benefit {
+  position: relative;
+  background-color: #D32154;
+}
+
+.section_benefit [class*="benefit_0"] {
+  opacity: 1;
+  position: relative;
+  background-color: #fff;
+  border: 4px solid #000;
+  border-radius: 20px;
+  padding: 80px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.section_benefit .benefit_01 {
+  margin-top: 40px;
+}
+
+.section_benefit .benefit_01 .benefit_text img {
+  width: 42px;
+  height: 42px;
+  margin-right: 10px;
+  transform: translateY(-5px);
+}
+.section_benefit [class*="benefit_0"] .benefit_text {
+  font-size: 36px;
+  line-height: 56px;
+  margin-top: 20px;
+  font-weight: 500;
+  color: #0D99FF;
+}
+
+.container.eight-columns-width>.cmp-container {
+  padding-inline: 8px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  margin-inline: auto;
+  min-width: 100%;
+}
+
+.cmp-adaptive-image picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  height: 100%;
+  justify-content: center;
+}
+
+.section_notice .challenge-inner {
+  margin: 0 auto;
+  padding: 140px 0px 70px;
+  text-align: left;
+}
+
+.section_notice .notice_list_title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.section_notice .notice_list {
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.section_notice .notice_list .notice_item {
+  position: relative;
+  padding-left: 14px;
+}
+
+.section_notice .notice_list .notice_item:before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: #222;
+  border-radius: 50%;
+  top: 10px;
+  left: 0;
+}
+
+.mo-1024 {
+  display: none;
+}
+
+@media (max-width: 1249px) {
+  .challenge-content {
+      margin-top: 0;
+  }
+  .challenge-content .challenge-inner, main.container {
+    max-width: 768px;
+  }
+  .section_schedule .challenge-inner {
+    padding: 100px 50px 129px;
+  }
+  .section_schedule .info_text {
+    margin-top: 29px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .section_schedule .info_text.icon {
+    margin-top: 12px;
+  }
+  .section_schedule .info_text.icon:before {
+    content: '';
+    display: inline-block;
+    vertical-align: -2.5px;
+    margin-right: 8px;
+    background-size: 16px 16px;
+    width: 16px;
+    height: 16px;
+  }
+  .section_schedule .schedule_box {
+    border-radius: 20px;
+    padding: 43px 50px 47px;
+    margin: 35px auto 0;
+  }
+  .section_schedule .schedule_box .schedule_item {
+    position: relative;
+    padding-top: 9px;
+    padding-bottom: 42px;
+  }
+  .section_schedule .inner_title, .section_step .inner_title, .section_benefit .inner_title {
+    font-size: 40px;
+  }
+  .section_schedule .schedule_box .icon_05 img {
+    opacity: 1;
+    position: absolute;
+    z-index: 10;
+    background-image: url(../img/callender);
+    -webkit-background-size: 2050px 1848px;
+    background-size: 2050px 1848px;
+    background-position: -1512px 0px;
+    width: 100px;
+    height: 100px;
+    top: -50px;
+    right: -25px;
+  }
+  .desc {
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .section_step .challenge-inner {
+    padding: 100px 50px;
+  }
+  .section_step .step_list {
+    margin: 28px -10px -10px;
+  }
+  .section_step .step_list [class*="step_item"] {
+    width: calc(50% - 20px);
+    margin: 10px;
+    padding: 40px 10px;
+    border: 3px solid #000;
+    border-radius: 20px;
+    min-height: 398px;
+  }
+  .section_step .step_list [class*="step_item"] .step {
+    font-size: 20px;
+    line-height: 36px;
+  }
+  .section_step .step_list [class*="step_item"] .step_title {
+    margin-top: 16px;
+    font-size: 26px;
+    line-height: 34px;
+  }
+  .section_step .step_list [class*="step_item"] .info_text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .section_step .step_list .step_item_01 .img_box {
+    background: url(../img/challenge-step1.png) no-repeat 50% 50%;
+    background-size: 260px 112px;
+  }
+  .section_step .step_list .step_item_02 .img_box {
+    background: url(../img/challenge-step2.png) no-repeat 50% 50%;
+    background-size: 260px 112px;
+  }
+  .section_step .step_list .step_item_03 .img_box {
+    background: url(../img/challenge-step3.png) no-repeat 50% 50%;
+    background-size: 260px 112px;
+  }
+  .section_step .step_list .step_item_04 .img_box {
+    background: url(../img/challenge-step4.png) no-repeat 50% 50%;
+    background-size: 90px 90px;
+  }
+  .section_benefit [class*="benefit_0"] .benefit_text {
+    font-size: 26px;
+    line-height: 34px;
+    margin-top: 12px;
+  }
+  .mo-1024 {
+    display: block;
+  }
+  .section_notice .challenge-inner {
+    padding: 70px 50px;
+  }
+  .section_notice .notice_list_title {
+    font-size: 20px;
+  }
+  .section_notice .notice_list {
+    margin-top: 15px;
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .section_notice .notice_list .notice_item {
+    padding-left: 11px;
+  }
+  .cmp-container {
+    margin-bottom: 50px;
+  }
+}
+
 @media only screen and (min-width: 1200px) {
   main.container {
     width: 100%;
     margin-inline: auto;
-    max-width: 1120px;
+    max-width: 1160px;
   }
   .image {
     margin-top: 32px;
@@ -19298,5 +19722,98 @@ main.container {
   .cmp-text h2 {
     font-size: 32px;
     line-height: 40px;
+  }
+  .container.eight-columns-width {
+    margin-inline: -16px;
+  }
+  .container.eight-columns-width>.cmp-container {
+    padding-inline: 16px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 66.6666666667%;
+    flex: 0 0 66.6666666667%;
+    min-width: 66.6666666667%;
+  }
+}
+
+@media (max-width: 767px) {
+  .mo {
+    display: block;
+  }
+  .section_schedule .challenge-inner {
+      padding: 100px 20px;
+  }
+  .section_schedule .info_text {
+    letter-spacing: -0.5px;
+  }
+  .section_schedule .schedule_box {
+    padding: 38px 20px 50px;
+    margin: 45px auto 0;
+  }
+  .section_step .challenge-inner {
+    padding: 100px 20px;
+  }
+  .section_step .step_list {
+    margin: 38px 0 0;
+  }
+  .section_step .step_list [class*="step_item"] {
+    width: 100%;
+    margin: 0;
+    padding: 40px 10px;
+    border: 3px solid #000;
+    border-radius: 20px;
+    min-height: 412px;
+  }
+  .section_step .step_list [class*="step_item"] .step_title {
+    margin-top: 15px;
+    font-size: 26px;
+    line-height: 34px;
+    letter-spacing: -0.5px;
+  }
+  .section_step .step_list [class*="step_item"] .img_box {
+    height: 172px;
+  }
+  .section_step .step_list [class*="step_item"] .info_text {
+    letter-spacing: -0.3px;
+  }
+  .section_step .step_list .step_item_01 .img_box {
+    background: url(../img/challenge-step1.png) no-repeat 50% 50%;
+    background-size: 275px 112px;
+  }
+  .section_step .step_list .step_item_02 .img_box {
+    background: url(../img/challenge-step2.png) no-repeat 50% 50%;
+    background-size: 275px 112px;
+  }
+  .section_step .step_list .step_item_03 .img_box {
+    background: url(../img/challenge-step3.png) no-repeat 50% 50%;
+    background-size: 275px 112px;
+  }
+  .section_step .step_list .step_item_04 .img_box {
+    background: url(../img/challenge-step4.png) no-repeat 50% 50%;
+    background-size: 90px 90px;
+  }
+  .section_step .step_list [class*="step_item"] + [class*="step_item"] {
+    margin-top: 24px;
+  }
+  .section_benefit .challenge-inner {
+    padding: 100px 20px;
+  }
+  .section_benefit .benefit_01 {
+    padding: 45px 0;
+  }
+  .section_benefit .benefit_01 .benefit_text img {
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+    transform: translateY(-5px);
+  }
+  .section_benefit .inner_title2 {
+    font-size: 24px;
+    line-height: 40px;
+  }
+  .mo-1024 {
+    display: none;
+  }
+  :where(.text):has(:where(.cmp-text)>:where(h1,h2,h3,h4,h5,h6):first-child) {
+    padding-left: 20px;
   }
 }
