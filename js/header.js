@@ -1,41 +1,95 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // // 스크롤시 보이는 메뉴
-    // var didScroll;
-    // var lastScrollTop = 0;
-    // var delta = 5;
-    // var navbarHeight = $(".headerArea").outerHeight();
+    // 스크롤시 보이는 메뉴
+    var didScroll;
+    var lastScrollTop = 0;
+    var delta = 5;
+    var navbarHeight = $(".headerArea").outerHeight();
 
-    // $(window).scroll(function (event) {
-    //     didScroll = true;
-    // });
+    $(window).scroll(function (event) {
+        didScroll = true;
+    });
 
-    // setInterval(function () {
-    //     if (didScroll) {
-    //         hasScrolled();
-    //         didScroll = false;
-    //     }
-    // }, 250);
+    setInterval(function () {
+        if (didScroll) {
+            hasScrolled();
+            didScroll = false;
+        }
+    }, 250);
 
-    // function hasScrolled() {
-    //     var st = $(this).scrollTop();
+    function hasScrolled() {
+        var st = $(this).scrollTop();
 
-    //     if (Math.abs(lastScrollTop - st) <= delta) return;
+        if (Math.abs(lastScrollTop - st) <= delta) return;
 
-    //     if (st > lastScrollTop && st > navbarHeight) {
-    //         // Scroll Down
-    //         $(".headerArea").removeClass("down").addClass("up");
-    //         jQuery(".mega_menu").removeClass("on");
-    //     } else {
-    //         // Scroll Up
-    //         if (st + $(window).height() < $(document).height()) {
-    //             $(".headerArea").removeClass("up").addClass("down");
-    //         }
-    //         if (st < navbarHeight) {
-    //             $(".headerArea").removeClass("down");
-    //         }
-    //     }
-    //     lastScrollTop = st;
-    // }
+        if (st > lastScrollTop && st > navbarHeight) {
+            // Scroll Down
+            $(".headerArea").removeClass("down").addClass("up");
+            jQuery(".mega_menu").removeClass("on");
+        } else {
+            // Scroll Up
+            if (st + $(window).height() < $(document).height()) {
+                $(".headerArea").removeClass("up").addClass("down");
+            }
+            if (st < navbarHeight) {
+                $(".headerArea").removeClass("down");
+            }
+        }
+        lastScrollTop = st;
+    }
+
+    // 호버 시 상세 네비게이션 표시
+    $(".headerArea").hover(
+        function () {
+            $(this).addClass("down").removeClass("up");
+            $(".mega_menu").addClass("on");
+        },
+        function () {
+            if ($(window).scrollTop() > navbarHeight) {
+                $(this).removeClass("down").addClass("up");
+                $(".mega_menu").removeClass("on");
+            }
+        }
+    );
+});
+
+// document.addEventListener("DOMContentLoaded", function () {
+//     // 스크롤시 보이는 메뉴
+//     var didScroll;
+//     var lastScrollTop = 0;
+//     var delta = 5;
+//     var navbarHeight = $(".headerArea").outerHeight();
+
+//     $(window).scroll(function (event) {
+//         didScroll = true;
+//     });
+
+//     setInterval(function () {
+//         if (didScroll) {
+//             hasScrolled();
+//             didScroll = false;
+//         }
+//     }, 250);
+
+//     function hasScrolled() {
+//         var st = $(this).scrollTop();
+
+//         if (Math.abs(lastScrollTop - st) <= delta) return;
+
+//         if (st > lastScrollTop && st > navbarHeight) {
+//             // Scroll Down
+//             $(".headerArea").removeClass("down").addClass("up");
+//             jQuery(".mega_menu").removeClass("on");
+//         } else {
+//             // Scroll Up
+//             if (st + $(window).height() < $(document).height()) {
+//                 $(".headerArea").removeClass("up").addClass("down");
+//             }
+//             if (st < navbarHeight) {
+//                 $(".headerArea").removeClass("down");
+//             }
+//         }
+//         lastScrollTop = st;
+//     }
 
     // 팝업
     function layer_open(no) {
