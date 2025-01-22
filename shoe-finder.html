@@ -31,8 +31,7 @@
         <!-- JS here -->
         <script src="/js/jquery-1.12.4.min.js"></script>
         <script src="/js/jquery-ui-1.12.1.js"></script>
-        <script src="/js/ui.js"></script>
-
+        <script src="/js/ui.js"></script>      
 </head>
 <body class="home page-template-default page page-id-20">
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MHSXCBGP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -50,9 +49,9 @@
                             </div>
                             <ul class="navbar">
                                 <li id="menu-item-304" class="only-menu menu-item menu-item-type-post_type menu-item-object-page menu-item-304"><a href="/shoe-finder.html">Shoe Finder</a></li>
-                                <li id="menu-item-168" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-168"><a href="javascript:void(0)">여성</a>
+                                <li id="menu-item-168" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-168"><a href="/women-road-running.html">여성</a>
                                     <ul class="sub-menu">
-                                        <li id="menu-item-172" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-172"><a href="javascript:void(0)">로드 러닝</a></li>
+                                        <li id="menu-item-172" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-172"><a href="/women-road-running.html">로드 러닝</a></li>
                                         <li id="menu-item-260" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-260"><a href="javascript:void(0)">트레일 러닝</a></li>
                                         <li id="menu-item-256" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-256"><a href="javascript:void(0)">하이킹</a></li>
                                         <li id="menu-item-252" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-252"><a href="javascript:void(0)">리커버리</a></li>
@@ -187,6 +186,305 @@
     <!-- // header end -->
 
     <!-- Shoe Finder start -->
+    <main id="grmnApp">
+        <div class="seo_title">
+            <h1>당신을 위한 호카 Shoe Finder</h1>
+        </div>
+        <section class="find_watch_block"> 
+            <div class="step_fixed">
+                <div class="step_fixed_btn"><a href="javascript:void(0);" aria-label="Click here to enter the next question" id="btn-next" data-type="next" class="btn-size-default btn-candy-blue-fill disabled">다음 질문</a></div>
+            </div>
+            <form id="wizard" action="/shoe-finder.html#">
+                <div class="find_watch_qa">
+                    <div class="find_watch_step steps">
+                        <h2>나의 성별은?</h2>
+                        <div class="options">
+                            <ul class="f__gender">
+                                <li class="f__gender__women"><input id="f__gender-1" name="f__gender" aria-label="여성" type="radio" value="f__gender__women"> <label for="f__gender-1">
+                                        <p>여성</p>
+                                    </label></li>
+                                <li class="f__gender__men"><input id="f__gender-2" name="f__gender" aria-label="남성" type="radio" value="f__gender__men"> <label for="f__gender-2">
+                                        <p>남성</p>
+                                    </label></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="find_watch_step steps hide">
+                        <h2>주로 어디에서 달리시나요?<br></h2>
+                        <div class="options">
+                            <ul class="f__where">
+                                <li class="f__where__road"><input id="f__where-1" name="f__where" aria-label="도로" type="checkbox" value="f__where__road"> <label for="f__where-1">
+                                        <p>도로</p>
+                                    </label></li>
+                                <li class="f__where__trail"><input id="f__where-2" name="f__where" aria-label="트레일/산길" type="checkbox" value="f__where__trail"> <label for="f__where-2">
+                                        <p>트레일/산길</p>
+                                    </label></li>
+                                <li class="f__where__track"><input id="f__where-3" name="f__where" aria-label="트랙" type="checkbox" value="f__where__track"> <label for="f__where-3">
+                                        <p>트랙</p>
+                                    </label></li>
+                                <li class="f__where__others"><input id="f__where-4" name="f__where" aria-label="기타" type="checkbox" value="f__where__others"> <label for="f__where-4">
+                                        <p>기타</p>
+                                    </label></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="find_watch_step steps hide">
+                        <h2>러닝의 주된 목적은 무엇인가요?</h2>
+                        <div class="options">
+                            <ul class="f__purpose">
+                                <li class="f__purpose__race"><input id="f__purpose-1" name="f__purpose" aria-label="레이스 준비" type="radio" value="f__purpose__race"> <label for="f__purpose-1">
+                                        <p>레이스 준비</p>
+                                    </label></li>
+                                <li class="f__purpose__health"><input id="f__purpose-2" name="f__purpose" aria-label="건강 관리 및 체중 조절" type="radio" value="f__purpose__health"> <label for="f__purpose-2">
+                                        <p>건강 관리 및 체중 조절</p>
+                                    </label></li>
+                                <li class="f__purpose__hobby"><input id="f__purpose-3" name="f__purpose" aria-label="취미 및 스트레스 해소" type="radio" value="f__purpose__hobby"> <label for="f__purpose-3">
+                                        <p>취미 및 스트레스 해소</p>
+                                    </label></li>
+                                <li class="f__purpose__others"><input id="f__purpose-4" name="f__purpose" aria-label="기타" type="radio" value="f__purpose__others"> <label for="f__purpose-4">
+                                        <p>기타</p>
+                                    </label></li> 
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="find_watch_step steps hide">
+                        <h2>주로 달리는 거리(km/회)</h2>
+                        <div class="options">
+                            <ul class="f__distance">
+                                <li class="f__distance__zero"><input id="f__distance-1" name="f__distance" aria-label="0~5km" type="radio" value="f__distance__zero"> <label for="f__distance-1">
+                                        <p>0~5km</p>
+                                    </label></li>
+                                <li class="f__distance__five"><input id="f__distance-2" name="f__distance" aria-label="5~10km" type="radio" value="f__distance__five"> <label for="f__distance-2">
+                                        <p>5~10km</p>
+                                    </label></li>
+                                <li class="f__distance__ten"><input id="f__distance-3" name="f__distance" aria-label="10~20km" type="radio" value="f__distance__ten"> <label for="f__distance-3">
+                                        <p>10~20km</p>
+                                    </label></li>
+                                <li class="f__distance__twenty"><input id="f__distance-3" name="f__distance" aria-label="20km 이상" type="radio" value="f__distance__twenty"> <label for="f__distance-3">
+                                        <p>20km 이상</p>
+                                    </label></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="find_watch_step steps hide">
+                        <h2>발의 아치 형태를 알고 계신가요?</h2>
+                        <div class="options">
+                            <ul class="f__arch">
+                                <li class="f__arch__low"><input id="f__arch-1" name="f__arch" aria-label="평발 Low Arch" type="radio" value="f__arch_low"> <label for="f__arch-1">
+                                        <p>평발<br>Low Arch</p>
+                                    </label></li>
+                                <li class="f__arch__medium"><input id="f__arch-2" name="f__arch" aria-label="보통 Medium Arch" type="radio" value="f__arch__medium"> <label for="f__arch-2">
+                                        <p>보통<br>Medium Arch</p>
+                                    </label></li>
+                                <li class="f__arch__high"><input id="f__arch-3" name="f__arch" aria-label="높은 아치 High Arch" type="radio" value="f__arch__high"> <label for="f__arch-3">
+                                        <p>높은 아치<br>High Arch</p>
+                                    </label></li>
+                                <li class="f__arch__donotknow"><input id="f__arch-4" name="f__arch" aria-label="잘 모르겠음" type="radio" value="f__arch__donotknow"> <label for="f__arch-4">
+                                        <p>잘 모르겠음</p>
+                                    </label></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="find_watch_step steps hide">
+                        <h2>보행 또는 달릴 때 발의 자세를 체크해보셨나요?</h2>
+                        <div class="options">
+                            <ul class="f__posture">
+                                <li class="f__posture__inside"><input id="f__posture-1" name="f__posture" aria-label="과내전 발 안쪽으로 기울어짐" type="radio" value="f__posture__inside"> <label for="f__posture-1">
+                                        <p>과내전<br>(발 안쪽으로 기울어짐)</p>
+                                    </label></li>
+                                <li class="f__posture__straight"><input id="f__posture-2" name="f__posture" aria-label="중립 발이 똑바로 움직임" type="radio" value="f__posture__straight"> <label for="f__posture-2">
+                                        <p>중립<br>(발이 똑바로 움직임)</p>
+                                    </label></li>
+                                <li class="f__posture__outside"><input id="f__posture-3" name="f__posture" aria-label="과외전 발 바깥쪽으로 기울어짐" type="radio" value="f__posture__outside"> <label for="f__posture-3">
+                                        <p>과외전<br>(발 바깥쪽으로 기울어짐)</p>
+                                    </label></li>
+                                <li class="f__posture__donotknow"><input id="f__posture-4" name="f__posture" aria-label="잘 모르겠음" type="radio" value="f__posture__donotknow"> <label for="f__posture-4">
+                                        <p>잘 모르겠음</p>
+                                    </label></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="find_watch_step steps hide">
+                        <h2>러닝 시 선호하는 쿠셔닝 강도</h2>
+                        <div class="options">
+                            <ul class="f__cushion">
+                                <li class="f__cushion__soft"><input id="f__cushion-1" name="f__cushion" aria-label="부드러운 쿠션" type="radio" value="f__cushion__soft"> <label for="f__cushion-1">
+                                        <p>부드러운 쿠션</p>
+                                    </label></li>
+                                <li class="f__cushion__normal"><input id="f__cushion-2" name="f__cushion" aria-label="중간 정도" type="radio" value="f__cushion__normal"> <label for="f__cushion-2">
+                                        <p>중간 정도</p>
+                                    </label></li>
+                                <li class="f__cushion__hard"><input id="f__cushion-3" name="f__cushion" aria-label="단단한 쿠션" type="radio" value="f__cushion__hard"> <label for="f__cushion-3">
+                                        <p>단단한 쿠션</p>
+                                    </label></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="find_watch_step steps hide">
+                        <h2>주로 러닝하는 시간대</h2>
+                        <div class="options">
+                            <ul class="f__time">
+                                <li class="f__time__morning"><input id="f__time-1" name="f__time" aria-label="아침" type="radio" value="f__time__morning"> <label for="f__time-1">
+                                        <p>아침</p>
+                                    </label></li>
+                                <li class="f__time__afternoon"><input id="f__time-2" name="f__time" aria-label="낮" type="radio" value="f__time__afternoon"> <label for="f__time-2">
+                                        <p>낮</p>
+                                    </label></li>
+                                <li class="f__time__evening"><input id="f__time-3" name="f__time" aria-label="저녁" type="radio" value="f__time__evening"> <label for="f__time-3">
+                                        <p>저녁</p>
+                                    </label></li>
+                                <li class="f__time__night"><input id="f__time-3" name="f__time" aria-label="밤" type="radio" value="f__time__night"> <label for="f__time-3">
+                                        <p>밤</p>
+                                    </label></li>
+                            </ul>
+                        </div>
+                    </div> 
+                    <div class="find_watch_step steps hide">
+                        <h2>중요하게 생각하는 요소</h2>
+                        <div class="options">
+                            <ul class="f__factor">
+                                <li class="f__factor__durability"><input id="f__factor-1" name="f__factor" aria-label="내구성" type="radio" value="f__factor__durability"> <label for="f__factor-1">
+                                        <p>내구성</p>
+                                    </label></li>
+                                <li class="f__factor__lightness"><input id="f__factor-2" name="f__factor" aria-label="가벼움" type="radio" value="f__factor__lightness"> <label for="f__factor-2">
+                                        <p>가벼움</p>
+                                    </label></li>
+                                <li class="f__factor__breathable"><input id="f__factor-3" name="f__factor" aria-label="통기성" type="radio" value="f__factor__breathable"> <label for="f__factor-3">
+                                        <p>통기성</p>
+                                    </label></li>
+                                <li class="f__factor__waterproof"><input id="f__factor-3" name="f__factor" aria-label="방수 기능" type="radio" value="f__factor__waterproof"> <label for="f__factor-3">
+                                        <p>방수 기능</p>
+                                    </label></li>
+                            </ul>
+                        </div>
+                    </div> 
+                </div>
+            </form>
+            
+            <script>
+                // 모든 단계와 버튼 가져오기
+                const steps = document.querySelectorAll('.find_watch_step');
+                const nextButton = document.getElementById('btn-next');
+                
+                // 현재 단계 추적 변수
+                let currentStep = 0;
+
+                // 버튼 클릭 시 단계 전환
+                nextButton.addEventListener('click', () => {
+                // 현재 단계 숨기기
+                steps[currentStep].classList.add('hide');
+
+                // 다음 단계로 이동
+                currentStep++;
+
+                // 다음 단계 보이기 (hide 제거)
+                if (currentStep < steps.length) {
+                    steps[currentStep].classList.remove('hide');
+
+                    // 다음 단계에서 버튼 다시 비활성화
+                    nextButton.classList.remove('active');
+                    nextButton.style.pointerEvents = 'none';
+                }
+
+                // 마지막 단계에서는 버튼 비활성화 (필요 시 추가)
+                if (currentStep === steps.length - 1) {
+                    nextButton.textContent = "결과 보기"; // 마지막 단계 텍스트 변경
+                }
+                
+                // 마지막 단계의 버튼 클릭 시 페이지 이동
+                if (currentStep === steps.length) {
+                    window.location.href = "shoe-finder-result.html"
+                }
+                });
+
+                // 선택 시 버튼 활성화
+                steps.forEach(step => {
+                step.addEventListener('change', () => {
+                    nextButton.classList.add('active');
+                    nextButton.style.pointerEvents = 'auto';
+                });
+                });     
+            </script>
+            
+        </section>
+
+        <section id="products__container" class="find_watch_products">
+            <a href="javascript:void(0);" aria-label="Open or close the comparison function" id="compare__button" class="compare_button hide" style="display: none;"><p>기능 비교</p></a>
+            <aside id="compare__fixed" class="app__compare">
+                <div id="compare_list" class="app__compare__list">
+                    <ul class="app__compare__list__wrapper js__compare__list__wrapper"></ul>
+                </div>
+                <div class="app__compare__ctas"><a href="javascript:void(0);" target="_blank" id="compare__cta" class="app__compare__cta">기능 비교</a> <button id="compare__close" class="app__compare__close">닫기</button></div>
+            </aside>
+            <div class="other_product no_result">
+                <div class="title">
+                    <h3>현재 당신의 모든 조건을 충족하는 스마트워치는 아직 출시되지 않았습니다! 다른 모델을 고려해 보세요:</h3>
+                </div>
+                <!---->
+            </div>
+            <div class="buttoms"><a href="javascript:void(0);" aria-label="Click here to play it again" id="restart"><img src="./당신을 위한 Garmin 스마트 워치 _ Garmin 한국_files/back.svg" alt="Start over">다시 추천</a></div>
+            <div id="function_abc" class="functionBox" style="display: none;">
+                <article>
+                    <h2>ABC 센서</h2>
+                    <!---->
+                    <p style="text-align: left;">고도계, 기압계, 3축 전자 나침반으로 다음 경로를 탐색하세요.</p>
+                </article>
+            </div>
+            <div id="function_air_integration" class="functionBox" style="display: none;">
+                <article>
+                    <h2>에어 인티그레이션</h2>
+                    <!---->
+                    <p style="text-align: left;">Descent T2 트랜시버(별도 판매) 와 함께 사용하면, SubWave 소나 네트워크를 통해 최대 8개 다이빙 탱크의 압력을 모니터링할 수 있습니다.</p>
+                </article>
+            </div>
+            <div id="function_aluminium_watch_case" class="functionBox" style="display: none;">
+                <article>
+                    <h2>알루미늄 베젤</h2>
+                    <!---->
+                    <p style="text-align: left;">이 스마트워치는 가벼워서 착용하기에 번거롭지 않은 알루미늄 베젤을 갖추고 있습니다.</p>
+                </article>
+            </div>
+            <div id="function_amoled" class="functionBox" style="display: none;">
+                <article>
+                    <h2>아몰레드 디스플레이</h2>
+                    <!---->
+                    <p style="text-align: left;">이 스마트워치의 AMOLED 디스플레이는 선명하고 밝고 매끈해서 햇빛을 받고 있을 때도 훌륭한 가독성을 제공합니다.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <!-- //Shoe Finder end -->
+    
+    <script type="text/x-template" id="productBlock">
+        <div class="product_block app__products___item" :data-product-id="p.gpn" :data-thumbnail="p.icon_url">
+        <div class="pic">
+            <a :href="p.link" target="_blank" :data-type="type"><img :src="p.icon_url" :alt="p.title" class="app__product__image" :alt="p.title"></a>
+        </div>
+        <div class="info">
+          <div class="pic pic_m">
+              <a :href="p.link" target="_blank" :data-type="type"><img :src="p.icon_url" :alt="p.title"></a>
+          </div>
+          <div class="name_wrap">
+              <h3 v-if="p.H1">{{ p.H1 }}</h3>
+              <h2 class="sub_name">{{ p.title }}</h2>
+            <p>{{ p.gpn }}</p>
+            <div class="price_section">
+              <p class="price" v-if="p.price">{{ p.currencyFormat }} {{ p.price | number('0,0') }}</p>
+              <p class="pricePromotion" v-if="p.pricePromotion">{{ p.currencyFormat }} {{ p.pricePromotion | number('0,0') }}</p>
+            </div>
+          </div>
+          <div class="clm_wrap">
+            <hr>
+              <transition name="slide">
+              <ul v-if="p.hashtagTextB.length > 0 && isActive" :class="{hide:!isActive}">
+                <li v-for="(t, index) in p.hashtagTextB"><a href="javascript:void(0)" data-fancybox :data-src="`#function_${ t }`" data-options='{"touch":false}'>{{ handHashTags(t) }}</a></li>
+              </ul>
+              </transition>
+              <a :href="p.link" class="btn-black-fill btn-size-default" target="_blank" :data-type="type">자세히</a>
+          </div>
+        </div>
+      </div>
+    </script>
     <!-- // Shoe Finder end -->
 
     <!-- footer area start -->
@@ -310,6 +608,8 @@
     <script src="/js/jquery.magnific-popup.min.js"></script>
     <script src="/js/plugins.js"></script>
     <script src="/js/swiper-bundle.min.js"></script>
+    <script src="/js/app_init.js"></script>
+    <script src="/js/app_wizard.min.js"></script>
     <script src="/js/main.js"></script>
     <script src="/js/header.js"></script>
     <script type="text/javascript">
@@ -324,9 +624,6 @@
     
             console.log("post_id : 20");
         })
-    
-        
-        
     </script>
     <script>
             $(function () {      
